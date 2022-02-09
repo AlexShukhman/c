@@ -1,0 +1,58 @@
+body {
+    margin:0px;
+    font-family: 'Lora', serif;
+}
+
+p {
+    margin: 0; 
+    padding: 1vh 20vw 0 20vw;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: medium;
+}
+
+.fullWidth {
+    width:100%
+}
+
+.blue {
+    background-color: #b6e1fa;
+}
+
+.short {
+    height: 15vh;
+}
+
+.centerer {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+}
+
+.quote {
+    font-style: italic;
+    margin: 3vh 5vw 2vh 5vw;
+    text-align: center;
+}
+
+.author {
+    font-style: italic;
+    margin: 0 5vw 3vh 5vw;
+    text-align: center;
+}
+
+h1 {
+    margin: 20vh 5vw 1vh 5vw;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.poem {
+    margin-top: 1vh;
+    font-size: medium;
+    text-align: center;
+}
+
+.story {
+    margin-top: 1.5vh;
+}
