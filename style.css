@@ -12,7 +12,7 @@ p {
 }
 
 .fullWidth {
-    width:100%
+    width:100%;
 }
 
 .blue {
@@ -24,7 +24,7 @@ p {
 }
 
 .centerer {
-    margin-top: 2vh;
+    margin-top: 12vh;
     display: flex;
     justify-content: center;
 }
