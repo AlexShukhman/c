@@ -15,5 +15,8 @@
     const div = document.getElementById(id);
     div.innerHTML += `<h1>${title}</h1>`;
     div.innerHTML += `<p class='author'>${author}</p>`;
-    div.innerHTML += body.split('\n').reduce((acc, line) => `${acc}<p class='story'>${line}</p>`, '');
+    div.innerHTML += body.split('\n').reduce(
+        (acc, line) => `${acc}${line.trim() ? `<p class='story'>${line.trim()}</p>` : '<br>'}`,
+        '',
+    );
 })();

@@ -1,0 +1,24 @@
+(function () {
+    const title = 'The Mountain and the Church';
+
+    const author = 'The legend of the Hudson Valley Hobgoblin of the Old Dutch Church, as told by Alex.';
+
+    const body = `A hobgoblin, in layman’s terms, is a supernatural being, not completely maleficent, who generally resides in a household or similar abode. They are notorious tricksters and have a particularly nasty temper. Puck, in A Midsummer Night’s Dream is described as a hobgoblin, if that gives you any indication of their disposition (though I can attest that I have found  people wildly variable in their hostility so it would stand to reason that hobgoblins must fall on some similar spectrum of animosity as well).
+    The first iteration of the Old Dutch Church, built in 1658 in Kingston, NY, was a real… bummer. It was unheated, had no prayer books (no one could read), and had no organ (they said playing the organ was the Devil’s work). It was truly the worst place to be on a beautiful Sunday morning but the old Calvinist Dutch seemed to be pretty alright with that. As luck would have it, though, people didn’t always happen to like horrible things like no music and not even having a bible to read, so when the Brits came through and burnt like… everything, they rebuilt. (They even made a little cupola – a term that has nothing to do with the director or the wine apparently?)
+    As time went on, the Church housed everything from education for black folks learning to read the bible, to the final resting place of a guy named George Clinton (no relation to the lord of funk). Point is, things were looking up for the stiff-upper-lipped church. That is, except for the abnormally loud snoring.
+    Legend has it that one of the earlier ministers (Washington Irving called him a dominie, but I won’t because we live in the 21st century) was coming home with his wife from New York City on one of those old-timey ships that went slower than a donkey on his lunch break. The ship was meandering up the Hudson when it passed the infamous Dunderberg Mountain (Dutch for “Thunder Mountain” - by the way there existed an old abandoned hamlet next to the mountain called “Doodletown” which is much less imposing), a mountain known for one thing: the imp.
+    The imp of Dunderberg Mountain was also definitely Dutch. According to Irving, he was “a little bulbous-bottomed Dutch goblin, in trunk hose and sugar-loafed hat, with a speaking trumpet in his hand”. Basically, he was just a pair of clogs away from selling you a pot brownie and teaching you about tulip prices. He was also purportedly the single-handed arbiter of the weather in the area, preferring to just absolutely wreck any ship he could which passed his mountain. The minister’s little vacation cruise was no different.
+    It wasn’t long after sighting Dunderberg Mountain that the ship began to experience the expected inclement weather. Once the boat had begun to head toward the jagged shoreline, the crew called upon the pastor to fight the unholy being. Being a good pastor, he chanted The Song of Saint Nicholas and the goblin was unable to resist his exorcism. In its flight from the potent priestly mumbo jumbo, the imp stole the nightcap off the priest’s wife’s head and flew off forty miles up river to land in the Old Dutch Church.
+    It was only when the cap was discovered off the bell tower of the church that the community started to piece together what was happening however. The congregation started noticing curious goings-on near the spire. A painter had been painting the steeple and started feeling the effects of lead poisoning, falling to his death with a fright from some unknown source. Sightings of unscheduled painters on the steeple during thunderstorms are common, and it is a well-known rumor that once the XII on the church’s clock had been auspiciously turned into an XIII. Even in the mid-80’s a painter of the roof scurried down from his ladder, white as a ghost, claiming that he had been tapped on the shoulder three times. He was the only painter that day.
+    Since the hobgoblin landed on sacred ground, he was trapped in his spire. It’s said that he will not be able to leave his post until the land upon which he is imprisoned becomes no longer concentrated. Until then, it’s still possible to hear his anguished moans, often mistaken for snores from the congregation (which sounds just a little suspicious to me).`;
+
+    const id = 'hobgoblin';
+
+    const div = document.getElementById(id);
+    div.innerHTML += `<h1>${title}</h1>`;
+    div.innerHTML += `<p class='author'>${author}</p>`;
+    div.innerHTML += body.split('\n').reduce(
+        (acc, line) => `${acc}${line.trim() ? `<p class='story'>${line.trim()}</p>` : '<br>'}`,
+        '',
+    );
+})();
