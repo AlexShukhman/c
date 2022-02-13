@@ -56,7 +56,7 @@ h1 {
 .story {
     margin-top: 1.5vh;
 }
-@media (max-width : 320px) {
+@media (max-width : 480px) {
     p {
         margin: 0; 
         padding: 1vh 10vw 0 10vw;
