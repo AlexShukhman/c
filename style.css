@@ -9,7 +9,7 @@ p {
     padding: 1vh 20vw 0 20vw;
     text-align: justify;
     text-justify: inter-word;
-    font-weight: medium;
+    font-size: medium;
 }
 
 .fullWidth {
@@ -55,4 +55,16 @@ h1 {
 
 .story {
     margin-top: 1.5vh;
+}
+@media (max-width : 320px) {
+    p {
+        margin: 0; 
+        padding: 1vh 10vw 0 10vw;
+        text-align: left;
+        font-size: small;
+    }
+
+    .poem {
+        font-size: smaller;
+    }
 }
